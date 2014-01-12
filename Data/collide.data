@@ -1,0 +1,8 @@
+#type			mass  			position         		velocity      			radius		texture			definition
+#type:sphere,	mass:900,		pos:(10, 0.0, -60.0),	vel:(-2.0, 0.0, 0.0),	rad:2.0,	tex:Images/Green.png,	def:10,
+type:sphere,	mass:900,		pos:(10, 0.0, -60.0),	vel:(0.0, 0.0, 0.0),	rad:2.0,	tex:Images/Green.png,	def:10,
+#type:sphere,	mass:500,		pos:(-0, 4.0, -60.0),	vel:(0.0, 2.5, 0.0),	rad:1.2,	tex:Images/White.png,	def:10,
+type:sphere,	mass:500,		pos:(-0, 4.0, -60.0),	vel:(0.0, 0.0, 0.0),	rad:1.2,	tex:Images/White.png,	def:10,
+type:sphere,	mass:500,		pos:(-10, 0.0, -60.0),	vel:(0.0, 0.0, 0.0),	rad:1.2,	tex:Images/Yellow.png,	def:10,
+
+#v = sqrt(0.5*5000/20)

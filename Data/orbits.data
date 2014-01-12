@@ -1,0 +1,7 @@
+#type			mass  			position         		velocity      			radius		texture			definition
+type:sphere,	mass:10,		pos:(35, 0.0, -60.0),	vel:(0.0, 0.0, -8.5),	rad:0.5,	tex:Images/Green.png,	def:10,
+type:sphere,	mass:200,		pos:(30, 0.0, -60.0),	vel:(0.0, 0.0, -4.1),	rad:2.0,	tex:Images/Green.png,	def:10,
+type:sphere,	mass:1000,		pos:(0, 0.0, -60.0),	vel:(0.0, 0.0, 0.0),	rad:5.0,	tex:Images/Yellow.png,	def:10,
+
+#v^2 = 30*0.5*1000/30^2
+#v^2 = 5*0.5*200/5^2

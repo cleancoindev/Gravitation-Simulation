@@ -1,0 +1,4 @@
+#type			mass  			position         		velocity      			radius		texture			definition
+type:sphere,	mass:200,		pos:(20, 0.0, -60.0),		vel:(0.0, 0.0, -4),	rad:3.0,	tex:Images/Green.png,	def:10,
+type:sphere,	mass:200,		pos:(-20, 0.0, -60.0),		vel:(0.0, 0.0, 4),	rad:3.0,	tex:Images/Blue.png,	def:10,
+type:sphere,	mass:1000,		pos:(0, 0.0, -60.0),		vel:(0.0, 0.0, 0.0),rad:3.0,	tex:Images/Yellow.png,	def:10,

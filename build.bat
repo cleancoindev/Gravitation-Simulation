@@ -1,0 +1,2 @@
+g++ -DGLEW_STATIC -O2 -o test.exe Scene.cpp -I"C:\MinGW\include" -L"C:\MinGW\lib" -lSOIL -lglew32s -lfreeglut -lopengl32 -lglu32 -static-libgcc -static-libstdc++ -w
+:-Wl,--subsystem,windows 	//to remove console
