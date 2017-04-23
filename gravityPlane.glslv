@@ -1,11 +1,11 @@
-#version 330
+#version 420
 layout(location = 0) in vec3 position;
 
 //Stays constant for whole mesh
 uniform mat4 MVP;			//Model View Projection matrix
 uniform mat4 modelM;		//Model matrix
 
-varying vec4 worldCoord;
+out vec4 worldCoord;
 
 void main()
 {
