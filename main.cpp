@@ -35,7 +35,6 @@ void Display()
 	if(tick / gl.FramesPerSecond() > 5)		// Print every 5 seconds
 	{
 		cout << gl.FramesPerSecond() << endl;
-		cout << gl.Position.x() << ", " << gl.Position.y() << ", " << gl.Position.z() << endl;
 		tick = 0;
 	}
 
@@ -195,16 +194,7 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
-	// ObjectContainer& gravityCont = grvty->GetContainer();
-	// gravityCont.AddObjectPtr(std::make_shared<Planet>("P0", "./Images/Globe.png", float3(-50, 0, 0), float3(0, 0, -2), 1));
-	// gravityCont.AddObjectPtr(std::make_shared<Planet>("P1", "./Images/Green.png", float3(50, 0, 0), float3(0, 0, 2), 1));
-
-	// gravityCont.AddObjectPtr(std::make_shared<Planet>("P2", "./Images/Blue.png", float3(0, 0, -50), float3(0, 2, 0), 1));
-	// gravityCont.AddObjectPtr(std::make_shared<Planet>("P3", "./Images/Purple.png", float3(0, 0, 50), float3(0, -2, 0), 1));
-
-	// gravityCont.AddObjectPtr(std::make_shared<Planet>("P4", "./Images/Yellow.png", float3(0, 0, 0), float3(0, 0, 0), 50));
-	// gravityCont["P4"]->SetScale(float3(3));
-
+	gl.StartFPS();
     glutMainLoop();
 
     return 0;

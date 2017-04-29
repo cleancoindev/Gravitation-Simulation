@@ -1,4 +1,12 @@
-#type			mass  			position         		velocity      			radius		texture			definition
-type:sphere,	mass:200,		pos:(20, 0.0, -60.0),		vel:(0.0, 0.0, -4),	rad:3.0,	tex:Images/Green.png,	def:10,
-type:sphere,	mass:200,		pos:(-20, 0.0, -60.0),		vel:(0.0, 0.0, 4),	rad:3.0,	tex:Images/Blue.png,	def:10,
-type:sphere,	mass:1000,		pos:(0, 0.0, -60.0),		vel:(0.0, 0.0, 0.0),rad:3.0,	tex:Images/Yellow.png,	def:10,
+#Label		mass  		position         	velocity      		radius		texture			definition
+label:planet0,	mass:500,	pos:(20, 0.0, -60.0),	vel:(0.0, 0.0, -4),	rad:1.0,	tex:Images/Green.png,	def:5,
+label:planet1,	mass:500,	pos:(-20, 0.0, -60.0),	vel:(4.0, 0.0, 4),	rad:1.0,	tex:Images/Blue.png,	def:5,
+label:planet2,	mass:1000,	pos:(30, 0.0, 0.0),	vel:(0.0, .0, -5.0), rad:3.0,	tex:Images/Yellow.png,	def:5,
+label:planet3,	mass:1000,	pos:(20, 0.0, 0.0),	vel:(5.0, 0.0, 0.0), 	rad:3.0,	tex:Images/Yellow.png,	def:5,
+label:planet4,	mass:1000,	pos:(0, 0.0, 0.0),	vel:(0.0, 0.0, 0.0), 	rad:1.5,	tex:Images/Yellow.png,	def:5,
+label:planet5,	mass:5000,	pos:(0, 0.0, 5.0),	vel:(2.0, 0, -8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,
+label:planet6,	mass:1000,	pos:(0, 0.0, 15.0),	vel:(0.0, 0, 8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,
+label:planet7,	mass:1000,	pos:(30, 0.0, 25.0),	vel:(-5.0, 0, -8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,
+label:planet8,	mass:1000,	pos:(0, 0.0, 35.0),	vel:(5.0, 0, -8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,
+label:planet9,	mass:1000,	pos:(20, 0.0, 45.0),	vel:(-5.0, 0, -8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,
+label:planet10,	mass:1000,	pos:(10, 0.0, 40.0),	vel:(5.0, 0, -8.0), 	rad:1.5,	tex:Images/Purple.png,	def:5,

@@ -83,6 +83,7 @@ bool InterpGravityFile(const std::string& fileName, std::shared_ptr<GravityPlane
 				}
 
 				planet = std::make_shared<Planet>(Label, Tex, Pos, Vel, Mass, Def);
+				planet->SetScale(float3(Rad));
 				grvty->GetContainer().AddObjectPtr(planet);
 			}
         }

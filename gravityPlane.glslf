@@ -30,7 +30,10 @@ vec4 Colour()
 	a *= G;
 
 	mag = sqrt(a.x*a.x + a.y*a.y + a.z*a.z);
-	if(mag > MaxGFS)
+	float level = log(mag/MaxGFS)/log(1.5);
+	if(abs(level - round(level)) < 0.05)
+		color = vec4(0.7, 0.7, 0.0, 1.0);
+	else if(mag > MaxGFS)
 		color = vec4(1.0, 1.0, 1.0, 1.0);
 	else
 		color = texture(textureMap, vec2(sqrt(mag/MaxGFS), 1.0));

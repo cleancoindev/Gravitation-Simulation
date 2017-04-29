@@ -1,6 +1,6 @@
 #include <reindeergl/Objects.h>
 
-const float gravitationalConst = 1;
+const float gravitationalConst = 0.5;
 
 class GravityPlane : public PlaneObj
 {
