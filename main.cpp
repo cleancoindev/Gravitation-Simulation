@@ -23,7 +23,7 @@ shared_ptr<GravityPlane> grvty;
 
 inline void MoveCam()
 {
-	gl.Position += (GLMath::RotateY(-gl.Rotation.y()) * gl.Velocity).Norm() * (shift ? camSpeedSlow : camSpeed) * gl.DeltaTime();
+	gl.Position += (GLMath::RotateY(gl.Rotation.y()) * gl.Velocity).Norm() * (shift ? camSpeedSlow : camSpeed) * gl.DeltaTime();
 }
 
 void Display()
@@ -151,9 +151,8 @@ void MouseMotion(int x, int y)
 	if(x != gl.Width() / 2 || y != gl.Height() / 2)
 		glutWarpPointer(gl.Width()/2, gl.Height()/2);
 
-	//Rotation around y axis depends on moving x-pixel coords :P (and vice versa)
-	gl.Rotation.y() -= 0.0008 * float(gl.Width() / 2 - x);
-	gl.Rotation.x() -= 0.00075 * float(gl.Height() / 2 - y);
+	gl.Rotation.y() += 0.001 * float(gl.Width() / 2 - x);
+	gl.Rotation.x() += 0.00075 * float(gl.Height() / 2 - y);
 
 	if(gl.Rotation.x() > 1.570796)
 		gl.Rotation.x() = 1.570796;

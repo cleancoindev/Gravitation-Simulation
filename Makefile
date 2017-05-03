@@ -2,7 +2,7 @@ OBJECTS=Planet.o GravityPlane.o Interpret.o
 OUT=test
 
 all: main.cpp $(OBJECTS)
-	g++ -o $(OUT) --std=c++11 -O2 main.cpp $(OBJECTS) -lreindeergl -lGLEW -lGLU -lglut -lGL -lSOIL
+	g++ -Wl,-rpath,$(PREFIX)/lib -o $(OUT) --std=c++11 -O2 main.cpp $(OBJECTS) -lreindeergl -lGLEW -lGLU -lglut -lGL -lSOIL
 
 clean:
 	rm *.o $(OUT)
