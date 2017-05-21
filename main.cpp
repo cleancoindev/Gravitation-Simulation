@@ -32,7 +32,7 @@ void Display()
 
 	gl.DrawAll();
 
-	if(tick / gl.FramesPerSecond() > 5)		// Print every 5 seconds
+	if(gl.FramesPerSecond() && tick / gl.FramesPerSecond() > 5)		// Print every 5 seconds
 	{
 		cout << gl.FramesPerSecond() << endl;
 		tick = 0;
@@ -193,6 +193,7 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
+	gl.Fullscreen();
 	gl.StartFPS();
     glutMainLoop();
 
